@@ -1,8 +1,7 @@
 {
   "builds": [{ "src": "*.php", "use": "vercel-php" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.php" }],
-   "routes": [{ "src": "/(.*)", "dest": "/login.php" }]
-  
+  "routes": [
+    { "src": "/login", "dest": "/login.php" },
+    { "src": "/(.*)", "dest": "/index.php" }
+  ]
 }
-
-
